@@ -75,28 +75,6 @@
         });
         window.onunload = function() {};
         window.onload = function() {
-            var flashPlayerVersion = getFlashPlayerVersion();
-            var aa = "1";
-            var bb = "0";
-            var pexFlag = "0";
-            var native_app_flg = "";
-            var chrome_app_flg = "";
-            var andapp_flg = "";
-            if (aa > 0 && bb == "") {
-                var flashPlayerVersion = getFlashPlayerVersion();
-                var filename = "http://125.6.169.35/idolmaster/smart_phone_flash/playerCash/" + flashPlayerVersion;
-                var uri = encodeURIComponent(filename);
-                var requrl = window.location.origin + "/12008305/?guid=ON&url=" + uri;
-                httpObj = new XMLHttpRequest();
-                httpObj.overrideMimeType('text/xml');
-                httpObj.open("GET", requrl, false);
-                httpObj.send(null);
-            }
-            if (flashPlayerVersion != "" && aa != "2" && pexFlag != 1 && native_app_flg != "1" && chrome_app_flg != "1" && andapp_flg != "1") {
-                var retUrl = "https://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fcampaign%2Fshow_flash_idol_comment%2F8%3Fl_frm%3DCampaign_check_idol_comment_1%26rnd%3D722362313%26opensocial_app_id%3D12008305%26opensocial_viewer_id%3D135825680%26opensocial_owner_id%3D135825680%26flashParam%3D802502809%26l_frm%3DSmart_phone_flash_convert_1%26rnd%3D476430688";
-                location.href = retUrl;
-                return;
-            }
             var option = {
                 enableButton: true,
                 enableTouch: true,
@@ -319,41 +297,7 @@
 <body style="height:100%">
     <div id="container"></div>
     <div id="mbga-pf-footer">
-        <div class="mbga-pf-footer-container odd-lines mbga-pf-footer-white">
-            <ul>
-                <li class="mbga-pf-footer-list">
-                    <div class="mbga-pf-fotter-content">
-                        <a class="mbga-pf-footer-arrow" href="https://sp.mbga.jp/_grp_view?g=32095227">
-                            <span class="mbga-pf-footer-caption">公式サークル</span>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div id="mbga-pf-footer-navbar">
-            <ul class="mbga-pf-box-h">
-                <li id="mbga-pf-footer-navbar-icon-grid" class="mbga-pf-footer-li">
-                    <a class="mbga-pf-footer-a mbga-pf-footer-home-w" href="https://sp.mbga.jp/?_from=globalfooter">
-                        <span class="mbga-pf-footer-txt">ホーム</span>
-                    </a>
-                </li>
-                <li id="mbga-pf-footer-navbar-icon-mypage" class="mbga-pf-footer-li">
-                    <a class="mbga-pf-footer-a mbga-pf-footer-mypage-w" href="https://sp.mbga.jp/_my0?_from=globalfooter">
-                        <span class="mbga-pf-footer-txt">マイページ</span>
-                    </a>
-                </li>
-                <li id="mbga-pf-footer-navbar-icon-mygame" class="mbga-pf-footer-li">
-                    <a class="mbga-pf-footer-a mbga-pf-footer-mygame-w" href="https://sp.mbga.jp/_game_my_top?_from=globalfooter">
-                        <span class="mbga-pf-footer-txt">マイゲーム</span>
-                    </a>
-                </li>
-                <li id="mbga-pf-footer-navbar-icon-notification" class="mbga-pf-footer-li">
-                    <a class="mbga-pf-footer-a mbga-pf-footer-game-w" href="https://sp.mbga.jp/_game_top?_from=globalfooter">
-                        <span class="mbga-pf-footer-txt">ゲーム</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+
         <script type="text/javascript" charset="UTF-8">
             (function() {
                 document.addEventListener('DOMContentLoaded', function() {
