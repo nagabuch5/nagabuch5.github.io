@@ -93,7 +93,7 @@
                 httpObj.send(null);
             }
             if (flashPlayerVersion != "" && aa != "2" && pexFlag != 1 && native_app_flg != "1" && chrome_app_flg != "1" && andapp_flg != "1") {
-                var retUrl = "../flash/3rd_kanako.swf";
+                var retUrl = "3rd_kanako.swf";
                 location.href = retUrl;
                 return;
             }
@@ -142,7 +142,7 @@
                     },
                 },
             };
-            var pex = new Pex('../flash/3rd_kanako.swf', "container", option);
+            var pex = new Pex('3rd_kanako.swf', "container", option);
             pex.getAPI().ready(function() {
                 setScrollTop();
             });
