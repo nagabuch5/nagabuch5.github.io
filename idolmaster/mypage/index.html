@@ -44,7 +44,7 @@
             var _spec_obj;
             var _spec = 'none';
             var version = 1;
-            // access方法検出
+            // access方法検出 액세스방법검출
             _spec_obj = {
                 'isNative': false,
                 'isAndApp': false,
@@ -71,7 +71,7 @@
         requirejs.config({
             paths: {
                 easeljs: "/idolmaster/js/easeljs-0.8.2.min.js",
-                easeljs_0_7_1: "/idolmaster/js/easeljs-0.7.1.min.js", //スプライトを読むためのバージョン
+                easeljs_0_7_1: "/idolmaster/js/easeljs-0.7.1.min.js", //スプライトを読むためのバージョン 스프라이트를 읽기 위한 버전
                 tweenjs: "/idolmaster/js/tweenjs-0.6.2.min.js",
                 movieclipjs: "/idolmaster/js/movieclip-0.7.1.min.js",
                 createjs: "/idolmaster/js/createjs-2015.11.26.min.js",
@@ -315,13 +315,13 @@
                             <div class="bar_wrap">
                                 <div class="bar red" style="width:100%"></div>
                             </div>
-                            <div class="gauge_value">777 / 150</div>
+                            <div class="gauge_value">500 / 500</div>
                         </a></li>
                     <li><a href="#" class="btn_main_battle inner_gauge">
                             <div class="bar_wrap">
                                 <div class="bar blue" style="width:100%"></div>
                             </div>
-                            <div class="gauge_value">222 / 148</div>
+                            <div class="gauge_value">300 / 300</div>
                         </a></li>
                     <li><a href="#" class="btn_main_deck">
                             <div></div>
@@ -358,8 +358,8 @@
             $(function() {
                 $('.lesson_comp_lvup, .lesson_comp').on('click', function() {
                     se_play('se_017');
-                    chara = $(this).attr('rel').replace('petit_idol_', ''); //ポジション
-                    petit_id = $(this).data('id'); //ぷちid
+                    chara = $(this).attr('rel').replace('petit_idol_', ''); //ポジション 포지션
+                    petit_id = $(this).data('id'); //ぷちid 푸치id
                     getLessonList(1, $(this).attr('rel').replace('petit_idol_', ''), !$(this).hasClass('lesson_select'));
                     $(this).removeClass().addClass('lesson_select');
                     if ($('.lesson_comp, .lesson_comp_lvup').size() <= 0) {
@@ -368,8 +368,8 @@
                     return false;
                 });
                 $('.lesson_select').on('click', function() {
-                    chara = $(this).attr('rel').replace('petit_idol_', ''); //ポジション
-                    petit_id = $(this).data('id'); //ぷちid
+                    chara = $(this).attr('rel').replace('petit_idol_', ''); //ポジション 포지션
+                    petit_id = $(this).data('id'); //ぷちid 푸치id
                     getLessonList(1, $(this).attr('rel').replace('petit_idol_', ''));
                     return false;
                 });
@@ -407,8 +407,8 @@
                                 uniqueId.unbind('click');
                                 uniqueId.on('click', function() {
                                     se_play('se_017');
-                                    chara = $(this).attr('rel').replace('petit_idol_', ''); //ポジション
-                                    petit_id = $(this).data('id'); //ぷちid
+                                    chara = $(this).attr('rel').replace('petit_idol_', ''); //ポジション 포지션
+                                    petit_id = $(this).data('id'); //ぷちid 푸치id
                                     getLessonList(1, $(this).attr('rel').replace('petit_idol_', ''), 1);
                                     $(this).removeClass().addClass('lesson_select');
                                     return false;
@@ -779,22 +779,22 @@
                     <div class="user_status_list">
                         <ul>
                             <li class="icon_00">
-                                <div class="text_value">211</div>
+                                <div class="text_value">1,000,000</div>
                             </li>
                             <li class="icon_02">
-                                <div class="text_value">288,820,866</div>
+                                <div class="text_value">9,999,999,999</div>
                             </li>
                             <li class="icon_01">
-                                <div class="text_value">97 / 97</div>
+                                <div class="text_value">300 / 300</div>
                             </li>
                             <li class="icon_04">
-                                <div class="text_value">2,597,438</div>
+                                <div class="text_value">8,058,267,198</div>
                             </li>
                             <li class="icon_03">
                                 <div class="text_value">300 / 300</div>
                             </li>
                             <li class="icon_05">
-                                <div class="text_value">11,749,932</div>
+                                <div class="text_value">2011,11,28</div>
                             </li>
                         </ul>
                     </div>
